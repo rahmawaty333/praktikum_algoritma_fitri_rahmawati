@@ -1,0 +1,19 @@
+{program untuk mengitung luas dan total biaya pengecatan}
+
+KAMUS DATA
+Panjang_(p): real
+Tinggi_(t) : real
+Harga_cat  : real
+Luas_(L)   : real
+Total_biaya: real
+
+ALGORITMA:
+read_(panjang)
+read_(tinggi)
+read_(harga_cat)
+
+luas <- panjang * Tinggi
+total_biaya <- luas * harga_cat
+
+write(luas)
+write(total biaya)
