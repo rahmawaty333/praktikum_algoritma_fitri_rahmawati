@@ -1,0 +1,12 @@
+PROGRAM HITUNG_Luas_Lingkaran
+{Program untuk menghitung luas area taman berbentuk lingkaran }
+
+KAMUS DATA
+  const PI : real = 3.14
+  r        : real
+  luas     : real
+
+  ALGORITMA
+  read(r)
+  luas <- PI * r * read
+  write(luas)
