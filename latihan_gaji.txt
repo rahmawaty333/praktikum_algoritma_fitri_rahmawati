@@ -1,0 +1,26 @@
+PROGRAM Hitung_gaji_bersih
+
+DEKLARASI
+  nama_karyawan : string
+  gaji_pokok    : integer
+  tunjangan     : real
+  total_pendapatan : real
+  pajak         : real
+  gaji_bersih   : real
+  
+ALGORITMA
+# Input data nama_karyawan
+OUTPUT "masukan nama_karyawan
+INPUT nama_karyawan
+OUTPUT "masukan Gaji_pokok:"
+INPUT gaji_pokok
+
+# proses_perhitungan
+tunjangan <- 0.20 * gaji_pokok
+total_pendapatan <- gaji_pokok + tunjangan
+pajak <- 0.10 * total_pendapatan_gaji_bersih <- total pendapatan_pajak
+
+# Output_hasil
+OUTPUT "nama_karyawan: ",nama_karyawan
+OUTPUT "Gaji_bersih_diterima:",gaji_bersih
+AKHIR PROGRAM
