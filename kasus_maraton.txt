@@ -1,13 +1,13 @@
 PROGRAM Konversi_waktu_maraton
 
 KAMUS
-  total_detik : real
-  jam         : real
-  sisa_detik  : real
-  menit       : real
-  detik       : real
+  total_detik : integrer
+  jam         : integrer
+  sisa_detik  : integrer
+  menit       : integrer
+  detik       : integrer
 
-  ALGORITMA
+ALGORITMA
   read(total_detik)
 
   jam <- total_detik DIV 3600
