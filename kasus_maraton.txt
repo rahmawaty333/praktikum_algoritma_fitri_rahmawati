@@ -1,0 +1,20 @@
+PROGRAM Konversi_waktu_maraton
+
+KAMUS
+  total_detik : real
+  jam         : real
+  sisa_detik  : real
+  menit       : real
+  detik       : real
+
+  ALGORITMA
+  read(total_detik)
+
+  jam <- total_detik DIV 3600
+  sisa_detik <- sisa_detik DIV
+  menit <- sisa_detik DIV 60
+  DETIK <- SISA_detik MOD 60
+
+  write(jam)
+  write(menit)
+  write(detik)
