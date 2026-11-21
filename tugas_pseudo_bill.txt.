@@ -1,0 +1,46 @@
+KALKULATOR_SPLIT_BILL
+
+DEKLARASI
+  nama_perwakilan_meja : string
+  total_harga_makan : real
+  jumlah_orang_patungan : integer
+  pajak_restoran : real
+  biaya_layanan : real
+  total_bayarAkhir : real
+  tagihan_perOrang : real
+
+ALGORITMA
+1. Menerima_Input
+WRITE "Masukan_Nama_Perwakilan_Meja:"
+READ nama_perwakilan_meja
+
+WRITE "Masukan_Total_Harga_Makanan:"
+READ total_harga_makanan
+
+WRITE "Masukan_Jumlah_orang_yang_ikut_patungan:"
+READ jumalah_orang_patungan
+
+2. Proses_Hitung_Pajak_Dan_biaya_layanan
+pajak_restoran <- 0.11 * total_harga_makanan
+biaya_layanan  <- 0.05 * total_harga_makanan
+
+3. Menghitung_Total_Bayar_Akhir
+total_bayar_akhir <- total_harga_makanan + pajak_restoran + biaya_layanan
+
+4. Menghitung_Tagihan_Per_Orang
+IF jumlah_orang_patungan > 0 THEN
+   tagihan_per_orang <- total_bayar_akhir/jumlah_orang_patungan
+ELSE
+  tagihan_perOrang <- 0
+ENDIF
+
+5. Menampilkan_Output_Ke_Layar
+WRITE "======================================"
+WRITE "Hasil_Perhitungan_Split_Bill_Restoran"
+WRITE "======================================"
+WRITE "Nama_Perwakilan_Meja  : " , nama_perwakilan_meja
+WRITE "Total_Bayar_AKHIR     : " , total_bayar_akhir
+WRITE "Tagihan_perOrang      : " , tagihan_perOrang 
+WRITE "======================================"
+
+  
